@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation'
 import { createSupabaseClient } from '@/lib/supabase'
 import { ToastProvider, useToast } from '@/components/ui/Toast'
 import {
-  IconLayers,
   IconBolt,
   IconShield,
   IconArrowRight,
@@ -156,7 +155,6 @@ function AuthScreen() {
       {/* Left — brand / marketing panel */}
       <aside className="auth-hero">
         <div className="flex items-center gap-2">
-          <div className="brand-mark"><IconLayers width={20} height={20} /></div>
           <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.25rem', color: '#fff' }}>
             ApproveFlow
           </span>
